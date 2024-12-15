@@ -738,7 +738,7 @@ const locatorsData = [
       address: "456 Wellness Blvd, Springfield",
       timings: "Mon-Sat: 9 AM - 8 PM, Sun: Closed",
       payment: "Cash, Credit/Debit Cards, Insurance",
-      mapLink: "https://maps.example.com/health-plus"
+      mapLink: "https://maps.app.goo.gl/3TpCCDaVnKzvWvMc6"
     }
   },
   // Add more categories like Laundry, ATM, Restaurants, etc.
@@ -771,7 +771,7 @@ function showLocatorsOverlay() {
               <p><strong>Address:</strong> ${locator.details.address}</p>
               <p><strong>Timings:</strong> ${locator.details.timings}</p>
               <button class="action-button" onclick="showMenu(event, '${locator.category}')">Menu</button>
-              <a href="${locator.details.mapLink}" target="https://maps.app.goo.gl/3TpCCDaVnKzvWvMc6" class="action-button">
+              <a href="${locator.details.mapLink}" target="_blank" class="action-button">
               <i class="fas fa-map-marker-alt"></i> Map
               </a>
               <button class="action-button" onclick="showInfo('${locator.category}')">Info</button>
